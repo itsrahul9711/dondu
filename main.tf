@@ -17,3 +17,8 @@ resource "azurerm_resource_group" "dondu" {
   name = "jagga"
   location = "eastus"
 }
+
+resource "azurerm_resource_group" "dondu1" {
+  name = "jagga1"
+  location = "eastus"
+}
