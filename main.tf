@@ -5,6 +5,12 @@ terraform {
         version = "4.70.0"
     }
   }
+  backend "azurerm" {
+    resource_group_name = "jagga"
+    storage_account_name = "dondustorage"
+    container_name = "bopu"
+    key = "rahul.tftsate"
+  }
   }
 
 
