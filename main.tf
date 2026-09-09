@@ -28,3 +28,8 @@ resource "azurerm_resource_group" "mo" {
   name     = "mondu"
   location = "eastus"
 }
+
+resource "azurerm_resource_group" "mangu" {
+  name     = "mangu"
+  location = "eastus"
+}
