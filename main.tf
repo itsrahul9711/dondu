@@ -21,7 +21,7 @@ resource "azurerm_resource_group" "dondu" {
 
 resource "azurerm_storage_account" "jatt" {
     depends_on = [ azurerm_resource_group.dondu ]
-  name = "dondu_storage"
+  name = "dondustorage"
   location = "east us"
   resource_group_name = "jagga"
   account_replication_type = "LRS"
