@@ -28,11 +28,3 @@ resource "azurerm_storage_account" "jatt" {
   account_tier = "Standard"
 
 }
-resource "azurerm_storage_container" "container_name" {
-    depends_on = [ azurerm_storage_account.jatt ]
-    name = "tfstate"
-    storage_account_id = azurerm_storage_account.tfstate.id
-    container_access_type = "private"
-  
-}
-
